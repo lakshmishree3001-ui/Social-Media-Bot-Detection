@@ -74,8 +74,15 @@ app.include_router(admin.router)
 
 @app.on_event("startup")
 async def startup_event():
-    # Warm up GNN inference models in background
     print("[Startup] Initializing Graphwarden API services...")
+    try:
+        from backend.database import Base, engine
+        Base.metadata.create_all(bind=engine)
+        from backend.seed_database import seed
+        seed()
+    except Exception as e:
+        print(f"[Startup Warning] Database auto-init: {e}")
+
     InferenceEngine.get_instance()
     print("[Startup] Graphwarden API ready to serve requests.")
 
