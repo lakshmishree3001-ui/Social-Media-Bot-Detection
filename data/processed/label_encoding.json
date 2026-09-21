@@ -1,0 +1,12 @@
+{
+  "int_to_str": {
+    "0": "human",
+    "1": "bot",
+    "2": "suspicious"
+  },
+  "str_to_int": {
+    "human": 0,
+    "bot": 1,
+    "suspicious": 2
+  }
+}

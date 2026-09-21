@@ -1,0 +1,14 @@
+{
+  "graph_feature_columns": [
+    "in_degree",
+    "out_degree",
+    "total_degree",
+    "in_degree_centrality",
+    "out_degree_centrality",
+    "pagerank",
+    "clustering_coeff",
+    "betweenness",
+    "k_core"
+  ],
+  "n_graph_features": 9
+}

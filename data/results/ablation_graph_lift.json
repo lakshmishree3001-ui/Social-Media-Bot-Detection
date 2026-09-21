@@ -1,0 +1,14 @@
+{
+  "Behavioral_plus_NLP": {
+    "features": 71,
+    "accuracy": 1.0,
+    "f1_macro": 1.0
+  },
+  "Behavioral_plus_NLP_plus_Graph": {
+    "features": 80,
+    "accuracy": 1.0,
+    "f1_macro": 1.0
+  },
+  "Delta_Accuracy": 0.0,
+  "Delta_F1_Macro": 0.0
+}

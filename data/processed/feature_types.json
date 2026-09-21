@@ -1,0 +1,30 @@
+{
+  "continuous": [
+    "account_age_days",
+    "followers_count",
+    "following_count",
+    "post_count",
+    "listed_count",
+    "posts_per_day",
+    "profile_completeness"
+  ],
+  "ratio_0_1": [
+    "reply_ratio",
+    "retweet_ratio",
+    "mention_ratio",
+    "url_ratio",
+    "hashtag_ratio",
+    "duplicate_content_ratio"
+  ],
+  "binary": [
+    "verified",
+    "has_profile_image",
+    "has_description",
+    "default_profile"
+  ],
+  "normalisation": {
+    "continuous": "StandardScaler (applied in Module 4)",
+    "ratio_0_1": "Already 0-1, optional MinMaxScaler",
+    "binary": "No normalisation"
+  }
+}

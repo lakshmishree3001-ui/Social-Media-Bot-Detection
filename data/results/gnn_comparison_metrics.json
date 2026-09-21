@@ -1,0 +1,35 @@
+[
+  {
+    "Model": "GCN",
+    "Accuracy": 0.7867,
+    "Precision_Macro": 0.733,
+    "Recall_Macro": 0.7588,
+    "F1_Macro": 0.7289,
+    "F1_Weighted": 0.7928,
+    "ROC_AUC": 0.933,
+    "Train_Time_Sec": 3.688,
+    "Best_Val_Loss": 0.5245
+  },
+  {
+    "Model": "GraphSAGE",
+    "Accuracy": 1.0,
+    "Precision_Macro": 1.0,
+    "Recall_Macro": 1.0,
+    "F1_Macro": 1.0,
+    "F1_Weighted": 1.0,
+    "ROC_AUC": 1.0,
+    "Train_Time_Sec": 2.655,
+    "Best_Val_Loss": 0.0002
+  },
+  {
+    "Model": "GAT",
+    "Accuracy": 0.8413,
+    "Precision_Macro": 0.7857,
+    "Recall_Macro": 0.8083,
+    "F1_Macro": 0.779,
+    "F1_Weighted": 0.8474,
+    "ROC_AUC": 0.9543,
+    "Train_Time_Sec": 5.842,
+    "Best_Val_Loss": 0.4057
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "Model": "Logistic Regression",
+    "Accuracy": 1.0,
+    "Precision_Macro": 1.0,
+    "Recall_Macro": 1.0,
+    "F1_Macro": 1.0,
+    "F1_Weighted": 1.0,
+    "ROC_AUC": 1.0,
+    "Train_Time_Sec": 0.1102,
+    "Inference_Time_ms": 0.0
+  },
+  {
+    "Model": "Decision Tree",
+    "Accuracy": 1.0,
+    "Precision_Macro": 1.0,
+    "Recall_Macro": 1.0,
+    "F1_Macro": 1.0,
+    "F1_Weighted": 1.0,
+    "ROC_AUC": 1.0,
+    "Train_Time_Sec": 0.0638,
+    "Inference_Time_ms": 0.0
+  },
+  {
+    "Model": "Random Forest",
+    "Accuracy": 1.0,
+    "Precision_Macro": 1.0,
+    "Recall_Macro": 1.0,
+    "F1_Macro": 1.0,
+    "F1_Weighted": 1.0,
+    "ROC_AUC": 1.0,
+    "Train_Time_Sec": 0.4188,
+    "Inference_Time_ms": 37.35
+  },
+  {
+    "Model": "XGBoost",
+    "Accuracy": 1.0,
+    "Precision_Macro": 1.0,
+    "Recall_Macro": 1.0,
+    "F1_Macro": 1.0,
+    "F1_Weighted": 1.0,
+    "ROC_AUC": 1.0,
+    "Train_Time_Sec": 0.7985,
+    "Inference_Time_ms": 2.01
+  },
+  {
+    "Model": "Support Vector Machine",
+    "Accuracy": 1.0,
+    "Precision_Macro": 1.0,
+    "Recall_Macro": 1.0,
+    "F1_Macro": 1.0,
+    "F1_Weighted": 1.0,
+    "ROC_AUC": 1.0,
+    "Train_Time_Sec": 0.4627,
+    "Inference_Time_ms": 27.94
+  }
+]

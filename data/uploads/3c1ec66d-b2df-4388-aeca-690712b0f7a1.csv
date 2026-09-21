@@ -1,0 +1,16 @@
+user_id,account_age_days,followers,following,post_count,verified,posts_per_day,text,label
+U1001,1460,820,610,1840,0,1.3,Had a great weekend exploring Bengaluru. The weather was lovely!,human
+U1002,980,1240,530,1260,0,1.3,Sharing a few photos from our college event today.,human
+U1003,2100,3400,980,4200,1,2.0,Excited to announce our community meetup next month.,human
+U1004,720,560,410,740,0,1.0,Reading about graph neural networks for my project.,human
+U1005,1800,1500,760,2100,0,1.2,Thanks everyone for the helpful feedback on my presentation.,human
+U2001,45,120,4800,12,0,106.7,FREE offer!!! Click now http://example.com #deal #deal #deal,bot
+U2002,32,80,3600,9,0,112.5,FREE offer!!! Click now http://example.com #deal #deal #deal,bot
+U2003,61,150,5200,15,0,85.2,LIMITED DEAL!!! Visit http://example.com #promo #promo,bot
+U2004,28,95,4100,7,0,146.4,Earn rewards today!!! Click http://example.com #promo #promo,bot
+U2005,74,210,6100,18,0,82.4,Special offer available now!!! http://example.com #deal,bot
+U3001,120,340,1900,25,0,15.8,Join this campaign now! Share the same message with your network.,suspicious
+U3002,115,360,1750,24,0,15.2,Join this campaign now! Share the same message with your network.,suspicious
+U3003,130,390,2100,31,0,16.2,Join this campaign now! Share the same message with your network.,suspicious
+U3004,105,280,1600,21,0,15.2,Join this campaign now! Share the same message with your network.,suspicious
+U3005,150,420,2300,35,0,15.3,Join this campaign now! Share the same message with your network.,suspicious

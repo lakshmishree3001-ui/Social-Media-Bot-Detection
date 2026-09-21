@@ -1,0 +1,6 @@
+Model,Accuracy,Precision_Macro,Recall_Macro,F1_Macro,F1_Weighted,ROC_AUC,Train_Time_Sec,Inference_Time_ms
+Logistic Regression,1.0,1.0,1.0,1.0,1.0,1.0,0.1102,0.0
+Decision Tree,1.0,1.0,1.0,1.0,1.0,1.0,0.0638,0.0
+Random Forest,1.0,1.0,1.0,1.0,1.0,1.0,0.4188,37.35
+XGBoost,1.0,1.0,1.0,1.0,1.0,1.0,0.7985,2.01
+Support Vector Machine,1.0,1.0,1.0,1.0,1.0,1.0,0.4627,27.94

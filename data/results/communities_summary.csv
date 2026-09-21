@@ -1,0 +1,32 @@
+community_id,size,n_bots,n_suspicious,n_humans,bot_concentration,suspicious_concentration,human_concentration,coordinated_ratio,internal_edges,internal_density,classification
+29,840,86,25,729,0.1024,0.0298,0.8679,0.1321,1592,0.004518,Organic Human Community
+7,625,261,283,81,0.4176,0.4528,0.1296,0.8704,1094,0.00561,Coordinated Bot Farm / Astroturfing
+5,590,315,86,189,0.5339,0.1458,0.3203,0.6797,957,0.005508,Mixed / Contested Cluster
+15,552,80,8,464,0.1449,0.0145,0.8406,0.1594,905,0.005951,Organic Human Community
+10,525,279,84,162,0.5314,0.16,0.3086,0.6914,809,0.005881,Mixed / Contested Cluster
+24,457,41,6,410,0.0897,0.0131,0.8972,0.1028,709,0.006804,Organic Human Community
+8,434,237,81,116,0.5461,0.1866,0.2673,0.7327,639,0.006801,Mixed / Contested Cluster
+3,432,226,98,108,0.5231,0.2269,0.25,0.75,646,0.006939,Coordinated Bot Farm / Astroturfing
+25,423,228,102,93,0.539,0.2411,0.2199,0.7801,659,0.007384,Coordinated Bot Farm / Astroturfing
+12,418,155,85,178,0.3708,0.2033,0.4258,0.5742,581,0.006666,Mixed / Contested Cluster
+20,372,49,12,311,0.1317,0.0323,0.836,0.164,566,0.008202,Organic Human Community
+2,362,165,54,143,0.4558,0.1492,0.395,0.605,506,0.007744,Mixed / Contested Cluster
+21,345,104,28,213,0.3014,0.0812,0.6174,0.3826,511,0.008611,Mixed / Contested Cluster
+6,326,135,26,165,0.4141,0.0798,0.5061,0.4939,461,0.008702,Mixed / Contested Cluster
+14,290,126,98,66,0.4345,0.3379,0.2276,0.7724,401,0.009569,Coordinated Bot Farm / Astroturfing
+22,290,33,8,249,0.1138,0.0276,0.8586,0.1414,410,0.009784,Organic Human Community
+23,288,56,17,215,0.1944,0.059,0.7465,0.2535,411,0.009945,Organic Human Community
+18,274,144,70,60,0.5255,0.2555,0.219,0.781,363,0.009706,Coordinated Bot Farm / Astroturfing
+30,268,105,43,120,0.3918,0.1604,0.4478,0.5522,362,0.010118,Mixed / Contested Cluster
+13,264,139,58,67,0.5265,0.2197,0.2538,0.7462,352,0.010139,Mixed / Contested Cluster
+11,256,81,28,147,0.3164,0.1094,0.5742,0.4258,335,0.010263,Mixed / Contested Cluster
+4,213,43,24,146,0.2019,0.1127,0.6854,0.3146,290,0.012844,Mixed / Contested Cluster
+16,211,66,22,123,0.3128,0.1043,0.5829,0.4171,281,0.012683,Mixed / Contested Cluster
+1,196,72,24,100,0.3673,0.1224,0.5102,0.4898,257,0.013448,Mixed / Contested Cluster
+9,179,73,46,60,0.4078,0.257,0.3352,0.6648,225,0.014123,Mixed / Contested Cluster
+17,174,72,27,75,0.4138,0.1552,0.431,0.569,221,0.014683,Mixed / Contested Cluster
+27,122,10,1,111,0.082,0.0082,0.9098,0.0902,158,0.021406,Organic Human Community
+0,115,46,21,48,0.4,0.1826,0.4174,0.5826,143,0.021815,Mixed / Contested Cluster
+28,89,32,29,28,0.3596,0.3258,0.3146,0.6854,104,0.026558,Mixed / Contested Cluster
+26,69,40,6,23,0.5797,0.087,0.3333,0.6667,79,0.033674,Mixed / Contested Cluster
+19,1,1,0,0,1.0,0.0,0.0,1.0,0,0.0,Coordinated Bot Farm / Astroturfing

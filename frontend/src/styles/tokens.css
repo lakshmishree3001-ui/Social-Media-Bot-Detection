@@ -1,0 +1,276 @@
+:root {
+  /* Graphwarden Core Archival Palette */
+  --paper: #F2EDE3;
+  --paper-deep: #E7E0D2;
+  --paper-hover: #DFD7C7;
+  --ink: #191713;
+  --ink-muted: #665F52;
+  --ink-subtle: #8C8578;
+  --ink-veil: #2A2721;
+  --rule: #8C8578;
+  --rule-light: #D1C8B6;
+
+  /* Semantic Forensic Stamping Colors */
+  --stamp: #A93B26;        /* Automated Bot / Threat Alert */
+  --stamp-bg: #F8ECE8;     /* Light tint for stamp background */
+  --ledger: #2C5D4F;       /* Authentic Human / Verified */
+  --ledger-bg: #EAF3EF;    /* Light tint for ledger background */
+  --signal: #C4892B;       /* Graph Canvas Amber / Graphic highlights */
+  --signal-text: #A8731F;  /* WCAG AA (4.5:1+) accessible amber on --paper */
+  --signal-bg: #FBF4E8;    /* Light tint for signal background */
+
+  /* Typography Stack */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', Menlo, Consolas, monospace;
+
+  /* Elevation (Only 1 shadow allowed in entire app) */
+  --shadow-command-bar: 0 4px 12px rgba(25, 23, 19, 0.08);
+}
+
+/* Global Reset & Base Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Sharp Corners Rule (Non-negotiable) */
+button, input, select, textarea, table, th, td, div, section, article, nav, aside {
+  border-radius: 0;
+}
+
+/* Allowed Radius Exceptions */
+.verdict-pill {
+  border-radius: 2px !important;
+}
+
+.graph-node-circle {
+  border-radius: 50% !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+
+/* Data, Numbers & Timestamps */
+.mono-data, .metric-value, .case-id, .code-val {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.btn-primary:hover {
+  background-color: #33302A;
+}
+
+.btn-secondary {
+  background-color: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--paper-deep);
+}
+
+.btn-activate-model {
+  background-color: var(--paper);
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.btn-activate-model:hover {
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+/* Accessibility Focus Ring (Section 6.1) */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--ink) !important;
+  outline-offset: 2px;
+}
+
+/* Stamp-Press Verdict Reveal (Section 10.3) */
+@keyframes stamp-press {
+  0% {
+    transform: scale(0.92) rotate(-0.5deg);
+    opacity: 0.75;
+  }
+  70% {
+    transform: scale(1.02) rotate(0.1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.stamp-press-motion {
+  animation: stamp-press 150ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.btn-stamp {
+  background-color: var(--stamp);
+  color: var(--paper);
+  border: 1px solid var(--stamp);
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.btn-stamp:hover {
+  background-color: #8E2F1C;
+}
+
+/* Forensic Table */
+.forensic-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12.5px;
+}
+
+.forensic-table th {
+  background-color: var(--paper-deep);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 8px 12px;
+  border-bottom: 1.5px solid var(--ink);
+  border-right: 1px solid var(--rule-light);
+}
+
+.forensic-table th:last-child {
+  border-right: none;
+}
+
+.forensic-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rule-light);
+  border-right: 1px solid var(--rule-light);
+}
+
+.forensic-table td:last-child {
+  border-right: none;
+}
+
+.forensic-table tr:hover td {
+  background-color: var(--paper-hover);
+  cursor: pointer;
+}
+
+/* Badges and Stamping */
+.badge-bot {
+  background-color: var(--stamp-bg);
+  color: var(--stamp);
+  border: 1px solid var(--stamp);
+  padding: 2px 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-human {
+  background-color: var(--ledger-bg);
+  color: var(--ledger);
+  border: 1px solid var(--ledger);
+  padding: 2px 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-suspicious {
+  background-color: var(--signal-bg);
+  color: var(--signal-text);
+  border: 1px solid var(--signal-text);
+  padding: 2px 6px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Stamp press ink physical animation */
+@keyframes stamp-press {
+  0% {
+    transform: scale(1.16) rotate(-1.5deg);
+    opacity: 0.7;
+  }
+  60% {
+    transform: scale(0.98) rotate(0.5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.stamp-press-motion {
+  animation: stamp-press 150ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  transform-origin: center center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stamp-press-motion {
+    animation: none !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink) !important;
+  outline-offset: 2px !important;
+}
+

@@ -1,0 +1,75 @@
+{
+  "dataset_name": "SocialBotDetection-Synthetic-v1",
+  "description": "Realistic synthetic dataset for social media bot detection. Schema mirrors Cresci-2017 and TwiBot-20/22 research datasets. Behavioral statistics grounded in published bot-detection literature.",
+  "references": [
+    "Cresci et al. 2017 -- The Paradigm-Shift of Social Spambots",
+    "Varol et al. 2017 -- Online Human-Bot Interactions",
+    "Yang et al. 2020 -- TwiBot-20: A Comprehensive Twitter Bot Detection Benchmark",
+    "Feng et al. 2022 -- TwiBot-22: Towards Graph-Based Twitter Bot Detection"
+  ],
+  "created_at": "2026-09-17 21:42:59",
+  "seed": 42,
+  "statistics": {
+    "total_users": 10000,
+    "total_tweets": 137774,
+    "total_edges": 55000,
+    "label_distribution": {
+      "0_human": 5000,
+      "1_bot": 3500,
+      "2_suspicious": 1500
+    },
+    "edge_type_distribution": {
+      "follows": 22729,
+      "retweets": 16991,
+      "replies": 9357,
+      "mentions": 5923
+    }
+  },
+  "schema": {
+    "users.csv": {
+      "user_id": "Unique integer user identifier",
+      "screen_name": "Username string",
+      "account_type": "human | bot | suspicious",
+      "label": "0=human  1=bot  2=suspicious",
+      "created_at": "Account creation date (YYYY-MM-DD)",
+      "account_age_days": "Days since account creation",
+      "followers_count": "Number of followers",
+      "following_count": "Number of accounts followed",
+      "post_count": "Total number of posts",
+      "verified": "1 if verified account",
+      "posts_per_day": "Average posts per day",
+      "reply_ratio": "Fraction of posts that are replies",
+      "retweet_ratio": "Fraction of posts that are retweets",
+      "mention_ratio": "Fraction of posts containing mentions",
+      "url_ratio": "Fraction of posts containing URLs",
+      "hashtag_ratio": "Fraction of posts containing hashtags",
+      "duplicate_content_ratio": "Fraction of near-duplicate posts",
+      "has_profile_image": "1 if profile has custom image",
+      "has_description": "1 if profile has bio/description",
+      "default_profile": "1 if profile uses default theme",
+      "profile_completeness": "0-1 score of how complete profile is",
+      "location": "Self-reported location (nullable)",
+      "listed_count": "How many lists user appears on (nullable)"
+    },
+    "tweets.csv": {
+      "tweet_id": "Unique tweet identifier",
+      "user_id": "Foreign key to users.csv",
+      "text": "Tweet text content",
+      "timestamp": "Posted datetime (YYYY-MM-DD HH:MM:SS)",
+      "retweet_count": "Number of retweets",
+      "like_count": "Number of likes",
+      "reply_count": "Number of replies to this tweet",
+      "has_url": "1 if tweet contains a URL",
+      "has_hashtag": "1 if tweet contains a hashtag",
+      "is_retweet": "1 if tweet is a retweet",
+      "account_type": "Inherited account type label"
+    },
+    "edges.csv": {
+      "source_user_id": "User initiating the interaction",
+      "target_user_id": "User receiving the interaction",
+      "interaction_type": "follows | retweets | replies | mentions",
+      "weight": "Edge weight (interaction strength 0-1)",
+      "timestamp": "Date of interaction (YYYY-MM-DD)"
+    }
+  }
+}

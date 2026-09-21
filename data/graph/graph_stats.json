@@ -1,0 +1,7 @@
+{
+  "n_nodes": 10000,
+  "n_edges": 54980,
+  "density": 0.00054985,
+  "weakly_cc": 2,
+  "n_graph_features": 9
+}

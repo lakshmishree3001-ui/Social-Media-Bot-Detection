@@ -1,0 +1,4 @@
+Model,Accuracy,Precision_Macro,Recall_Macro,F1_Macro,F1_Weighted,ROC_AUC,Train_Time_Sec,Best_Val_Loss
+GCN,0.7867,0.733,0.7588,0.7289,0.7928,0.933,3.688,0.5245
+GraphSAGE,1.0,1.0,1.0,1.0,1.0,1.0,2.655,0.0002
+GAT,0.8413,0.7857,0.8083,0.779,0.8474,0.9543,5.842,0.4057
